@@ -1,0 +1,120 @@
+site_name: Git & GitHub Guide
+site_description: A structured, institutional-grade Git reference for students and educators — concept-first, CLI-grounded, professionally aligned.
+site_author: Your Name
+site_url: https://jesselsookha.github.io/git-github-guide/
+
+repo_name: jesselsookha/git-github-guide
+repo_url: https://github.com/jesselsookha/git-github-guide
+edit_uri: ""
+
+copyright: "© 2026 Jessel Sookha. All rights reserved."
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+
+plugins:
+  - search:
+      lang: en
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+      title: On this page
+  - attr_list
+  - def_list
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jesselsookha
+
+nav:
+  - Home: index.md
+  - Learning Path: 00-learning-path.md
+
+  - "Part 1 — Foundations":
+    - Why Git Matters: docs/01-00-why-git-matters.md
+    - Welcome to Git: docs/01-01-welcome.md
+    - Installation: docs/01-02-installation.md
+    - Configuration: docs/01-03-configuration.md
+    - How Git Works: docs/01-04-how-git-works.md
+    - Core Commands: docs/01-05-core-commands.md
+
+  - "Part 2 — Guided Practice":
+    - Empty Repository: docs/02-01-empty-repo.md
+    - Repo with README: docs/02-02-repo-with-readme.md
+    - Classroom Clone: docs/02-03-classroom-clone.md
+    - Classroom Init: docs/02-04-classroom-init.md
+    - Common Misconceptions: docs/02-05-common-misconceptions.md
+    - Assignment Lifecycle: docs/02-06-assignment-lifecycle.md
+
+  - "Part 3 — Professional Standards":
+    - Commit Standards: docs/03-01-commit-standards.md
+    - README Guide: docs/03-02-readme-guide.md
+    - Submission Checklist: docs/03-03-submission-checklist.md
+
+  - "Part 4 — Collaboration":
+    - Branching: docs/04-01-branching.md
+    - Pull Requests: docs/04-02-pull-requests.md
+    - Group Workflows: docs/04-03-group-workflows.md
+    - Security & Academic Integrity: docs/04-04-security-integrity.md
+
+  - "Part 5 — Advanced Topics":
+    - Reverting & Inspecting History: docs/05-01-reverting.md
+    - Recovery: docs/05-02-recovery.md
+    - GitHub Actions: docs/05-03-actions.md
+    - Codespaces: docs/05-04-codespaces.md
+
+  - "Part 6 — IDE Workflows":
+    - IDE Philosophy: docs/06-00-ide-philosophy.md
+    - Visual Studio Code: docs/06-01-vscode.md
+    - Visual Studio: docs/06-02-visual-studio.md
+    - Android Studio: docs/06-03-android-studio.md
+    - NetBeans: docs/06-04-netbeans.md
+    - GitHub Desktop: docs/06-05-github-desktop.md
+    - macOS Terminal: docs/06-06-macos.md
+
+  - "Part 7 — Reference":
+    - Decision Trees: docs/07-01-decision-trees.md
+    - Cheat Sheet: docs/07-02-cheat-sheet.md
+    - Glossary: docs/07-03-glossary.md
+    - Troubleshooting: docs/07-04-troubleshooting.md
+    - Templates: docs/07-05-templates.md
