@@ -1531,7 +1531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../04-04-security-integrity.md" class="md-nav__link">
+      <a href="../04-04-security-integrity/" class="md-nav__link">
         
   
   
@@ -2078,7 +2078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../07-02-cheat-sheet.md" class="md-nav__link">
+      <a href="../07-02-cheat-sheet/" class="md-nav__link">
         
   
   
@@ -2487,23 +2487,23 @@
 <h2 id="ii-practical-application-creating-a-pull-request">II. Practical Application — Creating a Pull Request<a class="headerlink" href="#ii-practical-application-creating-a-pull-request" title="Permanent link">&para;</a></h2>
 <p>◆ Intermediate</p>
 <p>After completing and pushing your branch:</p>
-<p>I. Navigate to the repository on GitHub
-II. GitHub will typically display a banner: <em>"Your recently pushed branch — Compare &amp; pull request."</em> Click it. If it does not appear, switch to your branch manually and click <strong>Compare &amp; pull request</strong>.
-III. Review the base branch (<code>main</code>) and compare branch (your feature branch) — confirm these are correct
-IV. Write a <strong>clear, specific title</strong> that summarises the change:</p>
+<p>I. Navigate to the repository on GitHub<br />
+II. GitHub will typically display a banner: <em>"Your recently pushed branch — Compare &amp; pull request."</em> Click it. If it does not appear, switch to your branch manually and click <strong>Compare &amp; pull request</strong>.<br />
+III. Review the base branch (<code>main</code>) and compare branch (your feature branch) — confirm these are correct<br />
+IV. Write a <strong>clear, specific title</strong> that summarises the change:  </p>
 <ul>
 <li>Good: <em>"Add about.html with team member profiles"</em></li>
 <li>Poor: <em>"my changes"</em></li>
 </ul>
-<p>V. Write a <strong>description</strong> that provides context:</p>
+<p>V. Write a <strong>description</strong> that provides context:  </p>
 <ul>
 <li>What was built or fixed</li>
 <li>Any decisions that were made and why</li>
 <li>Anything the reviewer should look at specifically</li>
 <li>Whether any known issues or limitations remain</li>
 </ul>
-<p>VI. Assign reviewers if the team has established who reviews what
-VII. Click <strong>Create pull request</strong></p>
+<p>VI. Assign reviewers if the team has established who reviews what<br />
+VII. Click <strong>Create pull request</strong>  </p>
 <p>At this point, the PR is open. The branch is visible to every collaborator with repository access. It is not yet part of <code>main</code>. It waits for review.</p>
 <hr />
 <h2 id="iii-the-pr-description-why-it-matters">III. The PR Description — Why It Matters<a class="headerlink" href="#iii-the-pr-description-why-it-matters" title="Permanent link">&para;</a></h2>
@@ -2611,27 +2611,27 @@ VII. Click <strong>Create pull request</strong></p>
 <li><strong>Collaborators</strong> — create PRs, review each other's work, respond to review comments</li>
 </ul>
 <h3 id="steps">Steps<a class="headerlink" href="#steps" title="Permanent link">&para;</a></h3>
-<p>I. Each collaborator pushes their feature branch (from 04-01 activity)
-II. Each collaborator opens a PR with a clear title and description
-III. Each collaborator reviews at least one teammate's PR — leaves at least one substantive comment
-IV. Repository owner performs final review and merges approved PRs
-V. All collaborators pull the updated <code>main</code>:</p>
+<p>I. Each collaborator pushes their feature branch (from 04-01 activity)<br />
+II. Each collaborator opens a PR with a clear title and description<br />
+III. Each collaborator reviews at least one teammate's PR — leaves at least one substantive comment<br />
+IV. Repository owner performs final review and merges approved PRs<br />
+V. All collaborators pull the updated <code>main</code>:  </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main
 </code></pre></div>
 <h3 id="optional-extension-conflict-resolution">Optional Extension — Conflict Resolution<a class="headerlink" href="#optional-extension-conflict-resolution" title="Permanent link">&para;</a></h3>
 <p>If two students edit the same file on different branches and one is merged first, the second PR will show a conflict. The activity:</p>
-<p>I. GitHub marks the PR as "conflicted — cannot be merged automatically"
-II. The contributor pulls <code>main</code> into their branch:</p>
+<p>I. GitHub marks the PR as "conflicted — cannot be merged automatically"<br />
+II. The contributor pulls <code>main</code> into their branch:  </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main
 </code></pre></div>
-<p>III. Git marks the conflicted sections in the affected file
-IV. The contributor and reviewer discuss which version to keep
-V. The contributor edits the file, removes conflict markers, saves, stages, and commits:</p>
+<p>III. Git marks the conflicted sections in the affected file<br />
+IV. The contributor and reviewer discuss which version to keep<br />
+V. The contributor edits the file, removes conflict markers, saves, stages, and commits:  </p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>git<span class="w"> </span>add<span class="w"> </span>conflicted-file.html
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Resolve merge conflict in contact page&quot;</span>
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>feature-contactPage
 </code></pre></div>
-<p>VI. The PR updates automatically — it can now be merged</p>
+<p>VI. The PR updates automatically — it can now be merged  </p>
 <p>This extension is worth running at least once in a controlled environment. The first time a student encounters a merge conflict under deadline pressure is not the right time to learn how to resolve it.</p>
 <hr />
 <h2 id="viii-professional-insight-review-models-in-industry">VIII. Professional Insight — Review Models in Industry<a class="headerlink" href="#viii-professional-insight-review-models-in-industry" title="Permanent link">&para;</a></h2>

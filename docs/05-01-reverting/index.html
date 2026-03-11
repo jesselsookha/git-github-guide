@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://jesselsookha.github.io/git-github-guide/docs/05-01-reverting/">
       
       
-        <link rel="prev" href="../04-03-group-workflows/">
+        <link rel="prev" href="../04-04-security-integrity/">
       
       
         <link rel="next" href="../05-02-recovery/">
@@ -1252,7 +1252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../04-04-security-integrity.md" class="md-nav__link">
+      <a href="../04-04-security-integrity/" class="md-nav__link">
         
   
   
@@ -2023,7 +2023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../07-02-cheat-sheet.md" class="md-nav__link">
+      <a href="../07-02-cheat-sheet/" class="md-nav__link">
         
   
   
@@ -2421,10 +2421,10 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>git<span class="w"> </span>revert<span class="w"> </span>3037ae6
 </code></pre></div>
 <p>What happens:</p>
-<p>I. Git calculates the inverse of the changes introduced by that commit
-II. Git creates a new commit whose content is that inverse — staged automatically
-III. A text editor opens for the commit message (pre-filled with "Revert '<original-message>'")
-IV. Save and close the editor to complete the revert commit</p>
+<p>I. Git calculates the inverse of the changes introduced by that commit<br />
+II. Git creates a new commit whose content is that inverse — staged automatically<br />
+III. A text editor opens for the commit message (pre-filled with "Revert '<original-message>'")<br />
+IV. Save and close the editor to complete the revert commit  </p>
 <p>Your working directory now reflects the project state as if that commit had never been made — but the history shows both the original commit and the revert commit. The record is complete and honest.</p>
 <h3 id="if-a-conflict-occurs-during-revert">If a conflict occurs during revert<a class="headerlink" href="#if-a-conflict-occurs-during-revert" title="Permanent link">&para;</a></h3>
 <p>Occasionally, changes made after the target commit are incompatible with reversing it. Git will pause and mark the conflicted sections:</p>
@@ -2515,14 +2515,18 @@ IV. Save and close the editor to complete the revert commit</p>
 <h2 id="viii-professional-insight-safe-vs-unsafe-operations">VIII. Professional Insight — Safe vs Unsafe Operations<a class="headerlink" href="#viii-professional-insight-safe-vs-unsafe-operations" title="Permanent link">&para;</a></h2>
 <p>▲ Advanced</p>
 <p>Understanding which Git operations are safe in shared repositories and which are not is a mark of professional maturity. The distinction is simple in principle:</p>
-<p><strong>Safe operations add to history without altering it:</strong>
-- <code>git revert</code> — adds a new commit that undoes previous changes
-- <code>git checkout &lt;hash&gt;</code> — navigates to a previous state without modifying anything
-- <code>git log</code>, <code>git diff</code>, <code>git show</code> — read-only inspection</p>
-<p><strong>Unsafe operations in shared repositories rewrite existing history:</strong>
-- <code>git reset --hard</code> or <code>git reset --soft</code> — discards commits from the branch's visible history
-- <code>git rebase</code> on pushed commits — rewrites commit hashes, invalidating what others have pulled
-- <code>git push --force</code> — the delivery mechanism for rewritten history; forces the remote to accept a history that differs from what contributors already have</p>
+<p><strong>Safe operations add to history without altering it:</strong>  </p>
+<ul>
+<li><code>git revert</code> — adds a new commit that undoes previous changes  </li>
+<li><code>git checkout &lt;hash&gt;</code> — navigates to a previous state without modifying anything  </li>
+<li><code>git log</code>, <code>git diff</code>, <code>git show</code> — read-only inspection  </li>
+</ul>
+<p><strong>Unsafe operations in shared repositories rewrite existing history:</strong>  </p>
+<ul>
+<li><code>git reset --hard</code> or <code>git reset --soft</code> — discards commits from the branch's visible history  </li>
+<li><code>git rebase</code> on pushed commits — rewrites commit hashes, invalidating what others have pulled  </li>
+<li><code>git push --force</code> — the delivery mechanism for rewritten history; forces the remote to accept a history that differs from what contributors already have  </li>
+</ul>
 <p>The test for whether an operation is safe: <em>have other people already received the commits I am about to modify?</em> If yes, those commits belong to the shared history. Modifying them requires force-pushing, which tells every contributor that the history they have is wrong — and forces them to resolve the divergence.</p>
 <p>In professional environments, force-pushing to shared branches is either prohibited by branch protection rules or treated as a significant incident requiring team communication. In academic environments, it is a source of submission problems and integrity questions.</p>
 <p>Use the safe tools. Reserve the powerful ones for local branches, and understand their consequences before applying them anywhere shared.</p>
@@ -2578,7 +2582,7 @@ Inspecting history is not modifying — it is <strong>navigating safely</strong>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../04-03-group-workflows/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Group Workflows">
+          <a href="../04-04-security-integrity/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Security &amp; Academic Integrity">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2588,7 +2592,7 @@ Inspecting history is not modifying — it is <strong>navigating safely</strong>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Group Workflows
+                Security & Academic Integrity
               </div>
             </div>
           </a>
