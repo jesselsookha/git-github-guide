@@ -1,0 +1,2667 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A structured, institutional-grade Git reference for students and educators — concept-first, CLI-grounded, professionally aligned.">
+      
+      
+        <meta name="author" content="Your Name">
+      
+      
+        <link rel="canonical" href="https://jesselsookha.github.io/git-github-guide/docs/07-03-glossary/">
+      
+      
+        <link rel="prev" href="../07-01-decision-trees/">
+      
+      
+        <link rel="next" href="../07-04-troubleshooting/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+    
+    
+      
+        <title>Glossary - Git & GitHub Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#07-03-glossary" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Git &amp; GitHub Guide" class="md-header__button md-logo" aria-label="Git & GitHub Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Git & GitHub Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Glossary
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jesselsookha/git-github-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jesselsookha/git-github-guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../00-learning-path/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Learning Path
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../01-00-why-git-matters/" class="md-tabs__link">
+          
+  
+  
+  Part 1 — Foundations
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../02-01-empty-repo/" class="md-tabs__link">
+          
+  
+  
+  Part 2 — Guided Practice
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../03-01-commit-standards/" class="md-tabs__link">
+          
+  
+  
+  Part 3 — Professional Standards
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../04-01-branching/" class="md-tabs__link">
+          
+  
+  
+  Part 4 — Collaboration
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../05-01-reverting/" class="md-tabs__link">
+          
+  
+  
+  Part 5 — Advanced Topics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../06-00-ide-philosophy/" class="md-tabs__link">
+          
+  
+  
+  Part 6 — IDE Workflows
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../07-01-decision-trees/" class="md-tabs__link">
+          
+  
+  
+  Part 7 — Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Git &amp; GitHub Guide" class="md-nav__button md-logo" aria-label="Git & GitHub Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Git & GitHub Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jesselsookha/git-github-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jesselsookha/git-github-guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../00-learning-path/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning Path
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 1 — Foundations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 1 — Foundations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-00-why-git-matters/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Why Git Matters
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-01-welcome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome to Git
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-02-installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-03-configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-04-how-git-works/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How Git Works
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-05-core-commands/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 2 — Guided Practice
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 2 — Guided Practice
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-01-empty-repo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Empty Repository
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-02-repo-with-readme/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Repo with README
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-03-classroom-clone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Classroom Clone
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-04-classroom-init/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Classroom Init
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-05-common-misconceptions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Common Misconceptions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-06-assignment-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Assignment Lifecycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 3 — Professional Standards
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 3 — Professional Standards
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-01-commit-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commit Standards
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-02-readme-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    README Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-03-submission-checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Submission Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 4 — Collaboration
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 4 — Collaboration
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-01-branching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Branching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-02-pull-requests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pull Requests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-03-group-workflows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Group Workflows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-04-security-integrity.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security & Academic Integrity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 5 — Advanced Topics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 5 — Advanced Topics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-01-reverting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reverting & Inspecting History
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-02-recovery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recovery
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-03-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub Actions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-04-codespaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Codespaces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 6 — IDE Workflows
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 6 — IDE Workflows
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-00-ide-philosophy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IDE Philosophy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-01-vscode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Studio Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-02-visual-studio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Studio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-03-android-studio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android Studio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-04-netbeans/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NetBeans
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-05-github-desktop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub Desktop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-06-macos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    macOS Terminal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part 7 — Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part 7 — Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-01-decision-trees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Decision Trees
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-02-cheat-sheet.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheat Sheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-starting-a-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        I. Starting a Repository
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ii-working-on-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II. Working on Changes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iii-recording-and-managing-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        III. Recording and Managing History
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iv-branching-and-merging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IV. Branching and Merging
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v-collaboration-and-synchronisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        V. Collaboration and Synchronisation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vi-advanced-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VI. Advanced Operations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vii-core-concepts-extended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VII. Core Concepts — Extended
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-04-troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-05-templates/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Templates
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purpose
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-starting-a-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        I. Starting a Repository
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ii-working-on-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        II. Working on Changes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iii-recording-and-managing-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        III. Recording and Managing History
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iv-branching-and-merging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IV. Branching and Merging
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v-collaboration-and-synchronisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        V. Collaboration and Synchronisation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vi-advanced-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VI. Advanced Operations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vii-core-concepts-extended" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        VII. Core Concepts — Extended
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="07-03-glossary">07-03 — Glossary<a class="headerlink" href="#07-03-glossary" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="purpose">Purpose<a class="headerlink" href="#purpose" title="Permanent link">&para;</a></h2>
+<p>This glossary defines Git terminology with enough depth to be genuinely useful — not just as a lookup for definitions, but as a reference that explains what each term means, why it matters, and how it connects to the broader model.</p>
+<p>Terminology is the foundation of fluency. A developer who can name what they are doing, and explain why, has understanding that survives tool changes and interface differences. A developer who knows only button locations does not.</p>
+<p>Terms are grouped by function. Within each group, order moves from foundational to derived — start at the beginning of a section if a concept is unfamiliar.</p>
+<hr />
+<h2 id="i-starting-a-repository">I. Starting a Repository<a class="headerlink" href="#i-starting-a-repository" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Version Control</strong></td>
+<td>A system that records changes to files over time — who changed what, when, and why. Version control allows you to retrieve any previous state of the project, compare versions, and collaborate without overwriting each other's work. Git is a distributed version control system: every contributor has a complete copy of the history, not just a connection to a central server.</td>
+</tr>
+<tr>
+<td><strong>Git</strong></td>
+<td>The version control system itself — a command-line tool that tracks changes in files, manages branches, and maintains a complete history of a project. Git runs locally on your machine. It does not require an internet connection to commit, branch, or inspect history. GitHub is not Git; it is a hosting service for Git repositories.</td>
+</tr>
+<tr>
+<td><strong>Repository</strong></td>
+<td>The complete record of a project managed by Git. A repository contains all project files, all committed history, all branches, and all configuration — stored in a hidden <code>.git</code> directory at the project root. Every contributor who clones a repository has a full, independent copy of this history.</td>
+</tr>
+<tr>
+<td><strong>Remote Repository</strong></td>
+<td>A version of the repository hosted on a server — typically GitHub, GitLab, or Bitbucket. The remote is the shared, authoritative copy that all contributors push to and pull from. It is not a "master" copy in a technical sense — every local clone is equally complete — but it serves as the coordination point for collaboration.</td>
+</tr>
+<tr>
+<td><strong><code>git init</code></strong></td>
+<td>Creates a new repository by adding a <code>.git</code> directory to the current folder. Everything Git needs to track the project — the object database, configuration, branch references — lives inside this directory. Running <code>git init</code> does not affect existing files; it simply begins tracking them. Use when starting a project from scratch that is not already on GitHub.</td>
+</tr>
+<tr>
+<td><strong><code>git clone &lt;url&gt;</code></strong></td>
+<td>Creates a local copy of an existing remote repository. The full history, all branches, and the remote configuration (<code>origin</code>) are all transferred. Use when joining a project that already exists — including GitHub Classroom assignments. After cloning, the remote is already configured and push/pull work immediately.</td>
+</tr>
+<tr>
+<td><strong>Upstream</strong></td>
+<td>The original repository from which you forked or cloned, or the remote branch that a local branch is configured to track. When <code>git push -u origin main</code> is run, the <code>-u</code> flag sets <code>origin/main</code> as the upstream for the local <code>main</code> branch — enabling plain <code>git push</code> and <code>git pull</code> without specifying the remote each time.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="ii-working-on-changes">II. Working on Changes<a class="headerlink" href="#ii-working-on-changes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Working Directory</strong></td>
+<td>The folder on your computer where the project files are located. This is where you edit code, add files, and make changes. The working directory reflects the current state of the project — which may be ahead of, behind, or identical to the last commit.</td>
+</tr>
+<tr>
+<td><strong>Staging Area</strong></td>
+<td>An intermediate space between the working directory and the commit history. Files must be explicitly moved into the staging area with <code>git add</code> before they can be committed. The staging area allows you to select which changes belong in the next commit — grouping related changes together and leaving unrelated work for a subsequent commit. This selectivity is the mechanism behind focused, logical commits.</td>
+</tr>
+<tr>
+<td><strong><code>git add &lt;file&gt;</code></strong></td>
+<td>Moves a specific file from the working directory into the staging area. The file's current content is captured at this moment — subsequent edits to the file are not automatically included in the staged version. Run <code>git add</code> again after further edits if you want them included.</td>
+</tr>
+<tr>
+<td><strong><code>git add .</code></strong></td>
+<td>Stages all modified and new files in the current directory and all subdirectories. Convenient, but requires awareness: this stages everything, including files that may not yet belong in this commit. Review <code>git status</code> before and after to confirm what is staged.</td>
+</tr>
+<tr>
+<td><strong><code>git status</code></strong></td>
+<td>Shows the current state of the working directory and staging area. Reports which files are modified but unstaged, which are staged and ready to commit, which are untracked, and which branch HEAD is on. Running <code>git status</code> before every commit is a discipline, not a formality.</td>
+</tr>
+<tr>
+<td><strong><code>.gitignore</code></strong></td>
+<td>A configuration file at the repository root that specifies files and patterns Git should not track. Common exclusions include build output, IDE configuration files, and credentials. Files excluded by <code>.gitignore</code> will not appear in <code>git status</code> as untracked and cannot be accidentally staged. A <code>.gitignore</code> should be committed to the repository so all contributors share the same exclusions.</td>
+</tr>
+<tr>
+<td><strong><code>git restore &lt;file&gt;</code></strong></td>
+<td>Discards unstaged changes to a file — reverts it to the state it was in at the last <code>git add</code> or, if not staged, the last commit. This operation cannot be undone. Use with care; unsaved work is permanently discarded.</td>
+</tr>
+<tr>
+<td><strong><code>git restore --staged &lt;file&gt;</code></strong></td>
+<td>Removes a file from the staging area without discarding its changes. The file returns to "modified but unstaged" status. Use when you accidentally staged a file that should not be in the next commit.</td>
+</tr>
+<tr>
+<td><strong><code>git rm &lt;file&gt;</code></strong></td>
+<td>Removes a file from both the working directory and Git's tracking. The deletion is staged automatically and will be committed on the next <code>git commit</code>. Use when a file should no longer exist in the project at all.</td>
+</tr>
+<tr>
+<td><strong><code>git mv &lt;old&gt; &lt;new&gt;</code></strong></td>
+<td>Renames or moves a tracked file, recording the rename in the staging area. Preferable to manually renaming a file, which Git may interpret as a deletion and a new untracked file rather than a rename.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="iii-recording-and-managing-history">III. Recording and Managing History<a class="headerlink" href="#iii-recording-and-managing-history" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Commit</strong></td>
+<td>A permanent, addressable snapshot of the staged files at the moment the commit is created. Each commit contains the project state, the author's name and email, an exact timestamp, the hash of the parent commit, and a descriptive message. Commits are immutable — once created, their content and hash cannot change. The chain of commits forms the project's complete history.</td>
+</tr>
+<tr>
+<td><strong>Commit Hash</strong></td>
+<td>The unique identifier for a commit — a 40-character SHA-1 string generated from the commit's content, metadata, and parent hash. Even a single character difference in any of these inputs produces a completely different hash. The first seven characters are usually sufficient to reference a commit unambiguously in a repository.</td>
+</tr>
+<tr>
+<td><strong>Commit Message</strong></td>
+<td>The descriptive text attached to a commit explaining what changed. Convention: written in imperative mood ("Add feature" not "Added feature"), 50 characters or fewer for the subject line, with an optional body section separated by a blank line for extended explanation. Commit messages are the primary tool for understanding a repository's history without reading every diff.</td>
+</tr>
+<tr>
+<td><strong><code>git commit -m "message"</code></strong></td>
+<td>Creates a commit from all currently staged files with the provided message as the subject line. If the message requires more than a subject line, run <code>git commit</code> without the <code>-m</code> flag to open the configured text editor for a full multi-line message.</td>
+</tr>
+<tr>
+<td><strong><code>git log</code></strong></td>
+<td>Displays the commit history of the current branch, from newest to oldest. Each entry shows the full hash, author, date, and message. <code>git log --oneline</code> shows one line per commit — hash abbreviated to seven characters and message subject. <code>git log --oneline --graph --all</code> adds a visual representation of the branch structure.</td>
+</tr>
+<tr>
+<td><strong><code>git diff</code></strong></td>
+<td>Shows line-by-line differences between two states. Without arguments: differences between working directory and staging area (unstaged changes). With <code>--staged</code>: differences between staging area and last commit (what will be committed). With two hashes: differences between any two commits.</td>
+</tr>
+<tr>
+<td><strong><code>git show &lt;hash&gt;</code></strong></td>
+<td>Displays the full metadata and diff of a specific commit. Use when you need to understand exactly what a single commit changed.</td>
+</tr>
+<tr>
+<td><strong>Tag</strong></td>
+<td>A named reference to a specific commit — typically used to mark releases (e.g., <code>v1.0</code>, <code>v2.3.1</code>). Unlike branches, tags do not move as new commits are made. Annotated tags (created with <code>git tag -a</code>) include a message and are recommended for release marking.</td>
+</tr>
+<tr>
+<td><strong><code>git revert &lt;hash&gt;</code></strong></td>
+<td>Creates a new commit that applies the inverse of the specified commit's changes. The original commit remains in history; a new "revert" commit is added after it. The project state returns to what it was before the reverted commit, but the history is preserved intact. Safe for shared repositories.</td>
+</tr>
+<tr>
+<td><strong><code>git reset</code></strong></td>
+<td>Moves the branch pointer to a previous commit, with varying effects on staged and working files depending on the mode. <code>--soft</code>: moves pointer, keeps changes staged. <code>--mixed</code> (default): moves pointer, unstages changes but keeps them in working directory. <code>--hard</code>: moves pointer and discards all changes. Reset rewrites the branch's visible history — do not use on commits that have been pushed to a shared remote.</td>
+</tr>
+<tr>
+<td><strong><code>git reflog</code></strong></td>
+<td>Shows every movement of HEAD — commits, checkouts, resets, rebases — including positions no longer reachable through any branch. The reflog is the recovery tool of last resort: commits that appear to have been lost through a reset are almost always findable here. Retained locally for 90 days by default.</td>
+</tr>
+<tr>
+<td><strong><code>git bisect</code></strong></td>
+<td>Performs a binary search through the commit history to locate the specific commit that introduced a bug or regression. You mark a known good commit and a known bad commit; Git checks out the midpoint for you to test; you mark it good or bad; Git narrows the search until the introducing commit is found.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="iv-branching-and-merging">IV. Branching and Merging<a class="headerlink" href="#iv-branching-and-merging" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Branch</strong></td>
+<td>A named pointer to a specific commit that advances automatically as new commits are made on it. Branches enable parallel development — work on one branch does not affect any other. The <code>main</code> branch is the default shared line of development. Feature branches are created from it, developed independently, and merged back when the work is complete.</td>
+</tr>
+<tr>
+<td><strong>HEAD</strong></td>
+<td>The pointer that marks your current position in the repository history. In normal operation, HEAD points to the current branch, which points to its most recent commit. When you switch branches, HEAD moves. When you commit, the branch advances and HEAD moves with it. In detached HEAD state, HEAD points directly to a commit rather than a branch.</td>
+</tr>
+<tr>
+<td><strong>Detached HEAD State</strong></td>
+<td>A state in which HEAD points to a specific commit rather than to a branch. Occurs when you run <code>git checkout &lt;hash&gt;</code> or <code>git checkout &lt;tag&gt;</code>. Work done in detached HEAD state is not attached to any branch — new commits will be lost if you navigate away without first creating a branch. Safe for inspection; requires branch creation before committing.</td>
+</tr>
+<tr>
+<td><strong><code>git checkout -b &lt;n&gt;</code></strong></td>
+<td>Creates a new branch and switches to it in one command. The new branch starts at the current commit. This is the standard command for beginning work on a new feature or fix.</td>
+</tr>
+<tr>
+<td><strong><code>git switch &lt;n&gt;</code></strong></td>
+<td>Switches to an existing branch. Moves HEAD to point to the named branch and updates the working directory to reflect that branch's state. Modern alternative to <code>git checkout &lt;n&gt;</code> for branch switching specifically.</td>
+</tr>
+<tr>
+<td><strong>Merge</strong></td>
+<td>The operation that integrates the history of one branch into another. A merge commit is created that has two parent commits — the tips of both branches. If the changes do not overlap, the merge is automatic. If both branches modified the same lines, a conflict occurs and must be resolved manually.</td>
+</tr>
+<tr>
+<td><strong>Merge Conflict</strong></td>
+<td>A situation where Git cannot automatically integrate two branches because both have modified the same lines of the same file in incompatible ways. Git marks the conflicting sections with <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, and <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> markers and pauses the merge until the developer resolves the conflict manually, stages the resolved file, and commits.</td>
+</tr>
+<tr>
+<td><strong><code>git merge &lt;branch&gt;</code></strong></td>
+<td>Merges the specified branch into the current branch. If the current branch can be updated by simply moving its pointer forward (a fast-forward), no merge commit is created. If the branches have diverged, a merge commit is created.</td>
+</tr>
+<tr>
+<td><strong>Rebase</strong></td>
+<td>An alternative to merging that replays the commits from one branch on top of another, creating a linear history without a merge commit. Produces a cleaner, more readable history at the cost of rewriting commit hashes. Do not rebase commits that have been pushed to a shared remote — the rewritten hashes will conflict with what others have already pulled.</td>
+</tr>
+<tr>
+<td><strong><code>git stash</code></strong></td>
+<td>Saves uncommitted changes (both staged and unstaged) to a temporary stack and reverts the working directory to the last commit. Use when you need to switch branches but are not ready to commit current work. Restore with <code>git stash pop</code>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="v-collaboration-and-synchronisation">V. Collaboration and Synchronisation<a class="headerlink" href="#v-collaboration-and-synchronisation" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>git push</code></strong></td>
+<td>Uploads local commits to the configured remote branch. After the first push with <code>-u</code> (which sets the upstream tracking), subsequent pushes require only <code>git push</code> without additional arguments. Push does not happen automatically — it is always an explicit action.</td>
+</tr>
+<tr>
+<td><strong><code>git push -u origin main</code></strong></td>
+<td>Pushes the local <code>main</code> branch to the <code>origin</code> remote and sets it as the upstream tracking branch. After running this once, <code>git push</code> and <code>git pull</code> will use these settings by default.</td>
+</tr>
+<tr>
+<td><strong><code>git pull</code></strong></td>
+<td>Fetches commits from the remote and merges them into the current local branch. Equivalent to running <code>git fetch</code> followed by <code>git merge</code>. If the remote has commits that conflict with local changes, a merge conflict will result and must be resolved before the pull completes.</td>
+</tr>
+<tr>
+<td><strong><code>git fetch</code></strong></td>
+<td>Downloads commits, branches, and tags from the remote without merging them into the local branch. Allows inspection of what is on the remote before deciding to integrate. Use <code>git log origin/main</code> after fetching to review incoming commits.</td>
+</tr>
+<tr>
+<td><strong>Fork</strong></td>
+<td>A copy of another user's repository created under your own GitHub account. Forking is used in open-source contribution: you fork the original project, make changes in your fork, and submit a Pull Request to propose those changes back to the original. Your fork is independent — changes in your fork do not affect the original unless your PR is accepted.</td>
+</tr>
+<tr>
+<td><strong>Pull Request (PR)</strong></td>
+<td>A proposal, created on GitHub, to merge one branch into another — typically a feature branch into <code>main</code>. A PR shows all commits on the branch, a diff of all changes, and a discussion thread where reviewers can comment, approve, or request changes. The merge itself happens only after review and approval. Pull Requests are the primary mechanism for code review and controlled integration in collaborative development.</td>
+</tr>
+<tr>
+<td><strong><code>git remote</code></strong></td>
+<td>Manages connections to remote repositories. <code>git remote -v</code> shows all configured remotes. <code>git remote add &lt;name&gt; &lt;url&gt;</code> adds a new remote. <code>git remote set-url &lt;name&gt; &lt;url&gt;</code> updates an existing remote's URL. The default remote name is <code>origin</code> by convention.</td>
+</tr>
+<tr>
+<td><strong>GitHub</strong></td>
+<td>A cloud-based hosting platform for Git repositories. Provides the repository web interface, Pull Requests, Issues, GitHub Actions, Codespaces, and GitHub Classroom. GitHub is not Git — it is a service built on top of Git. Other equivalent hosting platforms include GitLab and Bitbucket.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="vi-advanced-operations">VI. Advanced Operations<a class="headerlink" href="#vi-advanced-operations" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><code>git cherry-pick &lt;hash&gt;</code></strong></td>
+<td>Applies the changes introduced by a specific commit onto the current branch, creating a new commit with the same changes but a different hash. Use when you need a specific fix from another branch without merging the entire branch.</td>
+</tr>
+<tr>
+<td><strong><code>git grep &lt;pattern&gt;</code></strong></td>
+<td>Searches all tracked files for lines matching a pattern. Respects <code>.gitignore</code>. Useful for finding where a function, variable, or string is used across the project without leaving the terminal.</td>
+</tr>
+<tr>
+<td><strong><code>git blame &lt;file&gt;</code></strong></td>
+<td>Annotates each line of a file with the commit hash, author, and date of the last change to that line. Use to understand when and why specific lines of code were written or modified.</td>
+</tr>
+<tr>
+<td><strong><code>git archive</code></strong></td>
+<td>Creates a compressed archive (<code>.zip</code> or <code>.tar</code>) of the repository at a specific commit or tag. Use for distributing a snapshot of the project without the full Git history.</td>
+</tr>
+<tr>
+<td><strong><code>git submodule</code></strong></td>
+<td>Allows one Git repository to be embedded inside another as a tracked dependency. The outer repository stores a reference to a specific commit in the inner repository, rather than copying its files. Used in projects with shared libraries or dependencies that are themselves version-controlled.</td>
+</tr>
+<tr>
+<td><strong><code>git worktree</code></strong></td>
+<td>Allows multiple working directories to be attached to a single repository. Each worktree can be on a different branch simultaneously. Use when you need to work on two branches at the same time without stashing or committing incomplete work.</td>
+</tr>
+<tr>
+<td><strong><code>git shortlog -sn</code></strong></td>
+<td>Summarises the commit history by author — showing the number of commits per contributor. Useful for reviewing contribution distribution in a group project.</td>
+</tr>
+<tr>
+<td><strong><code>git tag -a &lt;n&gt; -m "message"</code></strong></td>
+<td>Creates an annotated tag at the current commit with a name and message. Annotated tags are stored as full Git objects with their own metadata and are the recommended format for release marking. <code>git push origin --tags</code> pushes all tags to the remote.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="vii-core-concepts-extended">VII. Core Concepts — Extended<a class="headerlink" href="#vii-core-concepts-extended" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Distributed Version Control</strong></td>
+<td>Unlike centralised systems (where history lives on a single server), distributed version control gives every contributor a complete copy of the repository — including the full history. This means Git operations (commit, branch, log, diff) work without network access. It also means there is no single point of failure; any clone can reconstruct the full history.</td>
+</tr>
+<tr>
+<td><strong>The Three Areas</strong></td>
+<td>Git manages three distinct areas: the <strong>working directory</strong> (where files are edited), the <strong>staging area</strong> (where changes are prepared for commit), and the <strong>commit history</strong> (the permanent record). Most Git problems arise from confusion about which area a given operation affects. Every command in Git acts on one or more of these three areas.</td>
+</tr>
+<tr>
+<td><strong>Fast-Forward Merge</strong></td>
+<td>A merge where the current branch has no commits that are not already in the branch being merged. Rather than creating a merge commit, Git simply moves the current branch pointer forward to the tip of the other branch. The result is a linear history — as if the development had happened on one branch all along.</td>
+</tr>
+<tr>
+<td><strong>Non-Fast-Forward</strong></td>
+<td>A state in which the remote branch has commits that the local branch does not, making a simple fast-forward push impossible. Git rejects the push to prevent you from overwriting commits on the remote that you have not yet received. The resolution is to pull first (receiving the remote commits), resolve any conflicts, and then push the combined history.</td>
+</tr>
+<tr>
+<td><strong>Protected Branch</strong></td>
+<td>A branch configured on GitHub (or equivalent) to prevent direct pushes, require Pull Request approval before merging, or require passing CI checks before integration. Protected branches enforce collaboration and review discipline at the platform level rather than relying on individual compliance.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>This glossary is organised to support understanding, not just lookup.</p>
+<p>Sections move from foundational concepts to derived operations — repository setup, working on changes, recording history, branching, collaboration, and advanced operations. Reading a section in order builds the model; jumping to a specific term provides the definition.</p>
+<p>Terminology is the foundation of fluency. Developers who can name and explain what they are doing can communicate with teammates, read documentation, understand error messages, and adapt to new tools — because the concepts those tools implement are the ones described here.</p>
+<hr />
+<p>Proceed to:</p>
+<p>→ 07-04 — Troubleshooting</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../07-01-decision-trees/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Decision Trees">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Decision Trees
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../07-04-troubleshooting/" class="md-footer__link md-footer__link--next" aria-label="Next: Troubleshooting">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Troubleshooting
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026 Jessel Sookha. All rights reserved.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/jesselsookha" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
