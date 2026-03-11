@@ -4,9 +4,9 @@
 
 > Concept-first. CLI-grounded. Professionally aligned.
 
-◼ Built for first-year students &nbsp;·&nbsp; 
-◆ Useful for intermediate developers &nbsp;·&nbsp; 
-▲ Valuable for advanced practitioners &nbsp;·&nbsp; 
+◼ Built for first-year students  
+◆ Useful for intermediate developers  
+▲ Valuable for advanced practitioners  
 ❈ Designed with team and group workflows in mind
 
 ---
