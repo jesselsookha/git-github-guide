@@ -1,6 +1,6 @@
 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
 
-Copyright (c) 2026 Your Name
+Copyright (c) 2026 Jessel Sookha
 
 This work is licensed under the Creative Commons
 Attribution-NonCommercial-NoDerivatives 4.0 International License.
@@ -48,4 +48,4 @@ Institutions wishing to adopt this guide for curriculum use, adapt it for
 their programmes, or include it in commercial training products must obtain
 a separate written licence agreement.
 
-Enquiries: [your contact email]
+Enquiries: [jsookha@gmail.com] | [jsookha@emeris.ac.za]
