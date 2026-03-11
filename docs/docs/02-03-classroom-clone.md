@@ -20,10 +20,10 @@ That distinction is not administrative detail — it changes everything about ho
 
 When a lecturer creates an assignment in GitHub Classroom, a specific and deliberate structure is established behind the scenes.
 
-I. The assignment is attached to a GitHub **organisation account** — not a personal account
-II. A template repository may or may not be provided, depending on the assignment design
-III. An invitation link is generated and shared with students
-IV. Each student who accepts the link triggers an automatic action: GitHub creates a **private repository** under the organisation, linked to that student's GitHub account
+I. The assignment is attached to a GitHub **organisation account** — not a personal account  
+II. A template repository may or may not be provided, depending on the assignment design  
+III. An invitation link is generated and shared with students  
+IV. Each student who accepts the link triggers an automatic action: GitHub creates a **private repository** under the organisation, linked to that student's GitHub account  
 
 By the time you click the invitation link and accept the assignment, the repository already exists. It was created by GitHub. You did not create it, and you do not own it in the way you would own a personal repository.
 

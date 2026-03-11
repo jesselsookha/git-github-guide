@@ -46,11 +46,11 @@ Local Project Folder
 
 In plain terms:
 
-I. Tell Git to start tracking your project folder
-II. Record your first version in local history
-III. Create a destination repository on GitHub — with nothing in it
-IV. Link your local repository to that destination
-V. Upload your local history to GitHub
+I. Tell Git to start tracking your project folder  
+II. Record your first version in local history  
+III. Create a destination repository on GitHub — with nothing in it  
+IV. Link your local repository to that destination  
+V. Upload your local history to GitHub  
 
 At the end of this workflow, your project exists in two places: on your machine and on GitHub, with a shared, connected history between them.
 
@@ -83,10 +83,10 @@ Git must be initialised inside this root folder. If you initialise in the wrong 
 
 ### Opening a Terminal in the Correct Folder — Windows
 
-I. Open your project folder in Windows Explorer
-II. Click in the address bar at the top of the window
-III. Delete the current path displayed
-IV. Type `cmd` and press Enter
+I. Open your project folder in Windows Explorer  
+II. Click in the address bar at the top of the window  
+III. Delete the current path displayed  
+IV. Type `cmd` and press Enter  
 
 The Command Prompt will open **directly inside that folder**. This is the correct and reliable way to ensure you are in the right location before running any Git commands.
 
@@ -94,9 +94,9 @@ The Command Prompt will open **directly inside that folder**. This is the correc
 
 ### Opening a Terminal in the Correct Folder — macOS
 
-I. Open your project folder in Finder
-II. Right-click on the folder (or Control-click)
-III. Select "New Terminal at Folder"
+I. Open your project folder in Finder  
+II. Right-click on the folder (or Control-click)  
+III. Select "New Terminal at Folder"  
 
 If this option is not available, enable it via: System Preferences → Keyboard → Shortcuts → Services → "New Terminal at Folder."
 

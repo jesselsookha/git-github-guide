@@ -1,7 +1,7 @@
 # How Git Works
 
-◼ Beginner
-◆ Intermediate
+◼ Beginner  
+◆ Intermediate  
 
 Most Git confusion does not come from commands.
 

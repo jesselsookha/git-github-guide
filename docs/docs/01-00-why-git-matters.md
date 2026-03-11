@@ -1,8 +1,8 @@
 # Why Git Matters
 
-◼ Beginner
-◆ Intermediate
-▲ Advanced
+◼ Beginner  
+◆ Intermediate  
+▲ Advanced  
 
 Git is not simply a submission tool.
 

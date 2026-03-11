@@ -15,11 +15,11 @@ If you are a working developer using this guide outside of an academic programme
 
 Focus Areas:
 
-I. Understanding what Git is and why it exists
-II. Working directory vs staging area vs committed history
-III. The relationship between local and remote repositories
-IV. The six core commands and what each one actually does
-V. A clean, consistent submission workflow
+I. Understanding what Git is and why it exists  
+II. Working directory vs staging area vs committed history  
+III. The relationship between local and remote repositories  
+IV. The six core commands and what each one actually does  
+V. A clean, consistent submission workflow  
 
 Expected Outcome:
 
@@ -45,11 +45,11 @@ Primary Sections:
 
 Focus Areas:
 
-I. Branching — what a branch is, why it exists, and when to use one
-II. Merging — how branches are integrated and what merge commits represent
-III. Pull Requests — the formal mechanism for reviewing and accepting changes
-IV. Managing multiple features simultaneously without interfering with stable work
-V. Maintaining a clean, readable commit history that reflects structured development
+I. Branching — what a branch is, why it exists, and when to use one  
+II. Merging — how branches are integrated and what merge commits represent  
+III. Pull Requests — the formal mechanism for reviewing and accepting changes  
+IV. Managing multiple features simultaneously without interfering with stable work  
+V. Maintaining a clean, readable commit history that reflects structured development  
 
 Expected Outcome:
 
@@ -74,11 +74,11 @@ Primary Sections:
 
 Focus Areas:
 
-I. Feature branch strategy — defining and agreeing on a branching model before work begins
-II. Pull request reviews — reading others' code critically and constructively before merging
-III. Merge discipline — understanding when to merge, who should merge, and how to document it
-IV. Conflict resolution — approaching diverging changes as a structured decision, not an emergency
-V. Repository hygiene — keeping commit history clean, branches named clearly, and `main` protected
+I. Feature branch strategy — defining and agreeing on a branching model before work begins  
+II. Pull request reviews — reading others' code critically and constructively before merging  
+III. Merge discipline — understanding when to merge, who should merge, and how to document it  
+IV. Conflict resolution — approaching diverging changes as a structured decision, not an emergency  
+V. Repository hygiene — keeping commit history clean, branches named clearly, and `main` protected  
 
 Expected Outcome:
 
@@ -103,11 +103,11 @@ Primary Sections:
 
 Focus Areas:
 
-I. Reverting safely — undoing changes in a way that preserves history rather than erasing it
-II. Reset vs revert — understanding the difference between these two commands and when each is appropriate
-III. Recovering lost work — using Git's internal tools to retrieve commits that appear to be gone
-IV. GitHub Actions basics — understanding automated workflows and how they connect to repository events
-V. CI awareness — understanding what continuous integration means and why it depends on clean Git discipline
+I. Reverting safely — undoing changes in a way that preserves history rather than erasing it  
+II. Reset vs revert — understanding the difference between these two commands and when each is appropriate  
+III. Recovering lost work — using Git's internal tools to retrieve commits that appear to be gone  
+IV. GitHub Actions basics — understanding automated workflows and how they connect to repository events  
+V. CI awareness — understanding what continuous integration means and why it depends on clean Git discipline  
 
 Expected Outcome:
 

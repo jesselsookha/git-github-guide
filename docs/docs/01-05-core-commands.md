@@ -1,7 +1,7 @@
 # Core Git Commands
 
-◼ Beginner
-◆ Intermediate
+◼ Beginner  
+◆ Intermediate  
 
 This section introduces the essential Git commands that form the foundation of every workflow in this guide.
 

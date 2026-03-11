@@ -1,8 +1,8 @@
 # Welcome to the Git & GitHub Guide
 
-◼ Beginner
-◆ Intermediate
-❈ Collaboration
+◼ Beginner  
+◆ Intermediate  
+❈ Collaboration  
 
 This guide was developed to establish a clear, structured, and scalable understanding of Git and GitHub — for students at all levels, and for any developer who wants to build or rebuild their understanding on solid foundations.
 
@@ -41,11 +41,11 @@ This guide supports two reading modes.
 
 Follow the sections in order:
 
-I. Foundations
-II. Guided Practice
-III. Professional Standards
-IV. Collaboration
-V. Advanced Topics
+I. Foundations  
+II. Guided Practice  
+III. Professional Standards  
+IV. Collaboration  
+V. Advanced Topics  
 
 This sequence ensures proper conceptual layering. Each section builds on the understanding established by the previous one. Concepts introduced in Foundations are assumed in Guided Practice. Habits formed in Professional Standards are relied upon in Collaboration. Do not skip ahead — the order is intentional.
 

@@ -190,9 +190,9 @@ There is a variation of this problem that is more difficult to diagnose.
 
 Sometimes a student will:
 
-I. Clone the Classroom repository correctly
-II. Open their IDE and begin working
-III. Accidentally run `git init` from inside the cloned project folder
+I. Clone the Classroom repository correctly  
+II. Open their IDE and begin working  
+III. Accidentally run `git init` from inside the cloned project folder  
 
 This creates a repository *inside* a repository — a `.git` folder nested inside the existing `.git` structure of the cloned repository.
 

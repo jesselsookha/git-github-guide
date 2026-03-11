@@ -116,10 +116,10 @@ Without `--allow-unrelated-histories`, Git will refuse the merge entirely — be
 
 After running this command, Git will:
 
-I. Download the README commit from GitHub
-II. Attempt to merge it with your local commit
-III. If no file conflicts exist, create a **merge commit** that links both histories
-IV. Your repository now has a unified history with both commits
+I. Download the README commit from GitHub  
+II. Attempt to merge it with your local commit  
+III. If no file conflicts exist, create a **merge commit** that links both histories  
+IV. Your repository now has a unified history with both commits  
 
 If a text editor opens during this process (Git may prompt for a merge commit message), save and close it to confirm.
 
