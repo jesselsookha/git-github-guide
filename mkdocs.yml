@@ -5,28 +5,31 @@ site_url: https://jesselsookha.github.io/git-github-guide/
 
 repo_name: jesselsookha/git-github-guide
 repo_url: https://github.com/jesselsookha/git-github-guide
-
 edit_uri: ""
 
 copyright: "© 2026 Jessel Sookha. All rights reserved."
 
-# Tells MkDocs that your content root is the docs/ folder.
-# Nav paths below are then relative to docs/ —
-# so docs/01-01-welcome.md means docs/docs/01-01-welcome.md on disk.
+# MkDocs content root — all nav paths are relative to this folder
 docs_dir: docs
+
+# Custom CSS — place extra.css in docs/assets/extra.css
+extra_css:
+  - assets/extra.css
 
 theme:
   name: material
   palette:
+    # Light mode — ivory surface, gunmetal header
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+    # Dark mode — deep gunmetal surface, terracotta accents
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
