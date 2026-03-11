@@ -1,0 +1,374 @@
+/*
+ * Git & GitHub Guide — Custom Theme
+ * Palette: Ivory · Fiery Terracotta · Gunmetal
+ * --ivory:            #f6f7eb
+ * --fiery-terracotta: #e94f37
+ * --gunmetal:         #393e41
+ * Supporting tones derived from palette:
+ * --warm-white:       #fdfdf8  (near-white with warmth, page surface)
+ * --terracotta-deep:  #c03a25  (darkened terracotta for hover states)
+ * --gunmetal-mid:     #5a6063  (mid-tone for secondary text, borders)
+ * --gunmetal-light:   #e8e9e7  (very light gunmetal for dividers)
+ */
+
+/* ============================================================
+   GOOGLE FONTS — Supplemental import
+   Inter and JetBrains Mono are loaded via mkdocs.yml.
+   We add nothing extra here — the pairing is already strong.
+   ============================================================ */
+
+/* ============================================================
+   CSS CUSTOM PROPERTIES — LIGHT MODE
+   ============================================================ */
+[data-md-color-scheme="default"] {
+
+  /* Brand palette */
+  --md-primary-fg-color:              #393e41;   /* gunmetal — header bg */
+  --md-primary-fg-color--light:       #5a6063;
+  --md-primary-fg-color--dark:        #2a2e30;
+  --md-primary-bg-color:              #f6f7eb;   /* ivory — text on header */
+  --md-primary-bg-color--light:       rgba(246, 247, 235, 0.7);
+
+  --md-accent-fg-color:               #e94f37;   /* terracotta — links, active */
+  --md-accent-fg-color--transparent:  rgba(233, 79, 55, 0.1);
+  --md-accent-bg-color:               #f6f7eb;
+  --md-accent-bg-color--light:        rgba(246, 247, 235, 0.7);
+
+  /* Page surface */
+  --md-default-bg-color:              #fdfdf8;   /* warm near-white */
+  --md-default-bg-color--light:       rgba(253, 253, 248, 0.7);
+  --md-default-bg-color--lighter:     rgba(253, 253, 248, 0.3);
+  --md-default-bg-color--lightest:    rgba(253, 253, 248, 0.12);
+
+  /* Body text */
+  --md-default-fg-color:              #393e41;   /* gunmetal */
+  --md-default-fg-color--light:       rgba(57, 62, 65, 0.72);
+  --md-default-fg-color--lighter:     rgba(57, 62, 65, 0.44);
+  --md-default-fg-color--lightest:    rgba(57, 62, 65, 0.12);
+
+  /* Code blocks */
+  --md-code-bg-color:                 #f0f1e6;   /* slightly deeper ivory */
+  --md-code-fg-color:                 #2a2e30;
+
+  /* Typeset — headings pick up accent on hover */
+  --md-typeset-a-color:               #e94f37;
+
+  /* Admonition accent */
+  --md-admonition-bg-color:           #f6f7eb;
+}
+
+/* ============================================================
+   CSS CUSTOM PROPERTIES — DARK MODE
+   ============================================================ */
+[data-md-color-scheme="slate"] {
+
+  /* In dark mode: gunmetal becomes the surface, ivory becomes text */
+  --md-primary-fg-color:              #e94f37;   /* terracotta header accent */
+  --md-primary-fg-color--light:       #ed7060;
+  --md-primary-fg-color--dark:        #c03a25;
+  --md-primary-bg-color:              #f6f7eb;
+  --md-primary-bg-color--light:       rgba(246, 247, 235, 0.7);
+
+  --md-accent-fg-color:               #e94f37;
+  --md-accent-fg-color--transparent:  rgba(233, 79, 55, 0.15);
+
+  /* Dark surface — gunmetal tones */
+  --md-default-bg-color:              #2a2e30;
+  --md-default-bg-color--light:       rgba(42, 46, 48, 0.7);
+  --md-default-bg-color--lighter:     rgba(42, 46, 48, 0.3);
+  --md-default-bg-color--lightest:    rgba(42, 46, 48, 0.12);
+
+  /* Light text on dark */
+  --md-default-fg-color:              #f0f1e6;
+  --md-default-fg-color--light:       rgba(240, 241, 230, 0.72);
+  --md-default-fg-color--lighter:     rgba(240, 241, 230, 0.44);
+  --md-default-fg-color--lightest:    rgba(240, 241, 230, 0.12);
+
+  /* Code blocks */
+  --md-code-bg-color:                 #393e41;
+  --md-code-fg-color:                 #f0f1e6;
+
+  --md-typeset-a-color:               #e94f37;
+}
+
+/* ============================================================
+   HEADER — refine the top bar
+   ============================================================ */
+.md-header {
+  box-shadow: 0 1px 0 0 rgba(57, 62, 65, 0.15);
+}
+
+/* Site name — slightly refined weight */
+.md-header__title {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* ============================================================
+   NAVIGATION TABS — THE OVERFLOW FIX
+   ============================================================
+   The root cause: Material renders all top-level nav items as
+   horizontal tabs in a single flex row. With 9 items at full
+   label length the row overflows at typical desktop widths.
+
+   Fix strategy:
+   1. Allow the tab strip to wrap onto two lines when needed
+      (cleaner than truncation or hiding).
+   2. Reduce tab font size slightly so labels compress gracefully.
+   3. Reduce horizontal padding on each tab to recover space.
+   4. On very wide screens (1600px+) the single-line layout
+      naturally fits — the wrap only activates when needed.
+
+   If you prefer labels to abbreviate via CSS, see the
+   commented alternative below.
+   ============================================================ */
+.md-tabs__list {
+  flex-wrap: wrap;        /* allow tabs to flow onto a second line */
+  height: auto;           /* remove the fixed 48px height constraint */
+  padding-bottom: 2px;
+}
+
+.md-tabs__item {
+  height: 40px;
+}
+
+.md-tabs__link {
+  font-size: 0.72rem;     /* down from 0.8rem — recovers ~10% width */
+  padding: 0 0.65rem;     /* tighter horizontal padding */
+  opacity: 0.85;
+  transition: opacity 200ms ease;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  opacity: 1;
+}
+
+/* Active tab — terracotta underline indicator */
+.md-tabs__link--active {
+  border-bottom: 2px solid #e94f37;
+}
+
+/* ============================================================
+   SIDEBAR NAVIGATION — section titles and links
+   ============================================================ */
+
+/* Section titles in sidebar */
+.md-nav__title {
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Active nav link — terracotta left border */
+.md-nav__link--active,
+.md-nav__link:is(:focus, :hover) {
+  color: #e94f37;
+}
+
+.md-nav__item--active > .md-nav__link {
+  color: #e94f37;
+  font-weight: 600;
+}
+
+/* ============================================================
+   CONTENT TYPOGRAPHY
+   ============================================================ */
+
+/* Page title */
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #393e41;
+  border-bottom: 2px solid #e94f37;
+  padding-bottom: 0.4em;
+  margin-bottom: 1.2em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: #f0f1e6;
+}
+
+/* H2 — section anchors */
+.md-typeset h2 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #393e41;
+  margin-top: 2em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: #f0f1e6;
+}
+
+/* H3 */
+.md-typeset h3 {
+  font-weight: 600;
+  color: #5a6063;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: #c8c9c4;
+}
+
+/* Links */
+.md-typeset a {
+  color: #e94f37;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(233, 79, 55, 0.3);
+  transition: border-color 150ms ease, color 150ms ease;
+}
+
+.md-typeset a:hover {
+  color: #c03a25;
+  border-bottom-color: #c03a25;
+}
+
+/* ============================================================
+   CODE — inline and blocks
+   ============================================================ */
+.md-typeset code {
+  font-size: 0.85em;
+  border-radius: 3px;
+  padding: 0.1em 0.35em;
+}
+
+/* Code block header bar */
+.md-typeset pre > code {
+  border-radius: 6px;
+}
+
+/* ============================================================
+   TABLES
+   ============================================================ */
+.md-typeset table:not([class]) {
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(57, 62, 65, 0.08);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #393e41;
+  color: #f6f7eb;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: #e94f37;
+  color: #f6f7eb;
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: rgba(246, 247, 235, 0.6);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: rgba(57, 62, 65, 0.4);
+}
+
+/* ============================================================
+   SEARCH
+   ============================================================ */
+.md-search__form {
+  border-radius: 6px;
+}
+
+.md-search-result__title {
+  color: #e94f37;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.md-footer {
+  background-color: #393e41;
+  color: #f6f7eb;
+}
+
+.md-footer-meta {
+  background-color: #2a2e30;
+}
+
+.md-footer__link {
+  color: rgba(246, 247, 235, 0.7);
+  transition: color 150ms ease;
+}
+
+.md-footer__link:hover {
+  color: #e94f37;
+}
+
+/* ============================================================
+   TABLE OF CONTENTS (right sidebar)
+   ============================================================ */
+.md-nav--secondary .md-nav__link--active {
+  color: #e94f37;
+  font-weight: 600;
+}
+
+.md-nav--secondary .md-nav__link {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.72rem;
+}
+
+.md-nav--secondary .md-nav__link:hover {
+  color: #e94f37;
+}
+
+/* ============================================================
+   ADMONITIONS — rethemed to palette
+   ============================================================ */
+.md-typeset .admonition,
+.md-typeset details {
+  border-left-color: #e94f37;
+  border-radius: 0 6px 6px 0;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  background-color: rgba(233, 79, 55, 0.08);
+}
+
+/* ============================================================
+   COPY BUTTON — code blocks
+   ============================================================ */
+.md-clipboard {
+  color: rgba(57, 62, 65, 0.4);
+}
+
+.md-clipboard:hover {
+  color: #e94f37;
+}
+
+[data-md-color-scheme="slate"] .md-clipboard {
+  color: rgba(240, 241, 230, 0.4);
+}
+
+[data-md-color-scheme="slate"] .md-clipboard:hover {
+  color: #e94f37;
+}
+
+/* ============================================================
+   SCROLLBAR — subtle, on-brand (Webkit)
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(57, 62, 65, 0.25);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e94f37;
+}
