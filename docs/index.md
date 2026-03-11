@@ -24,9 +24,9 @@ If you are not a student — if you are a developer, a career-changer, or someon
 Start here:
 
 I. **Learning Path**
-II. Part 1 — Foundations
-III. Part 2 — Guided Practice
-IV. Part 3 — Professional Standards
+II. Part 1 — Foundations  
+III. Part 2 — Guided Practice  
+IV. Part 3 — Professional Standards  
 
 Do not skip the Foundations section.
 

@@ -57,15 +57,15 @@ In a collaborative project, each contributor works on their own branch, and chan
 
 The complete collaborative cycle:
 
-I. **Clone the shared repository** — every contributor starts from the same point
-II. **Create a branch for your assigned task** — give it a clear, descriptive name
-III. **Develop locally** — edit files, test changes, work at your own pace
-IV. **Commit regularly with clear messages** — each commit should describe a logical unit of progress
-V. **Push your branch to GitHub** — making it visible to teammates and available for review
-VI. **Open a Pull Request** — formally proposing that your branch be merged into `main`
-VII. **Review and respond to feedback** — address comments, make adjustments, re-push
-VIII. **After approval, merge** — the branch is integrated into `main`
-IX. **Pull the updated `main` locally** — every contributor synchronises after a merge
+I. **Clone the shared repository** — every contributor starts from the same point  
+II. **Create a branch for your assigned task** — give it a clear, descriptive name  
+III. **Develop locally** — edit files, test changes, work at your own pace  
+IV. **Commit regularly with clear messages** — each commit should describe a logical unit of progress  
+V. **Push your branch to GitHub** — making it visible to teammates and available for review  
+VI. **Open a Pull Request** — formally proposing that your branch be merged into `main`  
+VII. **Review and respond to feedback** — address comments, make adjustments, re-push  
+VIII. **After approval, merge** — the branch is integrated into `main`  
+IX. **Pull the updated `main` locally** — every contributor synchronises after a merge  
 
 ```bash
 git pull origin main
@@ -131,10 +131,10 @@ Form groups of three. Assign the following roles:
 
 ### Repository Owner Instructions
 
-I. Create a new repository named `Git-Practice-TeamName` on GitHub
-II. Initialise with a README so the repository is not empty
-III. Go to Settings → Collaborators → Add collaborators by GitHub username
-IV. Grant **Write** access — this allows collaborators to push branches but not to modify repository settings
+I. Create a new repository named `Git-Practice-TeamName` on GitHub  
+II. Initialise with a README so the repository is not empty  
+III. Go to Settings → Collaborators → Add collaborators by GitHub username  
+IV. Grant **Write** access — this allows collaborators to push branches but not to modify repository settings  
 
 ### Collaborator Instructions
 

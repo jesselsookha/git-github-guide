@@ -19,11 +19,11 @@ It is structured explanation — and it should be treated as part of the deliver
 
 A README should answer five fundamental questions:
 
-I. **What is this project?** — a clear, specific description of what it does
-II. **What problem does it solve?** — the purpose or motivation behind the project
-III. **How do I run it?** — step-by-step setup and execution instructions
-IV. **What technologies are used?** — languages, frameworks, tools, and dependencies
-V. **Who is responsible?** — authorship and contact information
+I. **What is this project?** — a clear, specific description of what it does  
+II. **What problem does it solve?** — the purpose or motivation behind the project  
+III. **How do I run it?** — step-by-step setup and execution instructions  
+IV. **What technologies are used?** — languages, frameworks, tools, and dependencies  
+V. **Who is responsible?** — authorship and contact information  
 
 If those five questions are unanswered, the repository is incomplete — regardless of how well the code is written.
 

@@ -93,12 +93,12 @@ Codespaces and GitHub Actions are complementary tools that together create a com
 
 The workflow:
 
-I. Developer opens repository in Codespaces — no local setup required
-II. Code is edited and committed inside the Codespace
-III. Commit is pushed to GitHub
-IV. GitHub Actions workflow triggers automatically
-V. The workflow compiles, tests, and packages the project on a separate runner
-VI. Results are visible in the Actions tab; artifacts are downloadable
+I. Developer opens repository in Codespaces — no local setup required  
+II. Code is edited and committed inside the Codespace  
+III. Commit is pushed to GitHub  
+IV. GitHub Actions workflow triggers automatically  
+V. The workflow compiles, tests, and packages the project on a separate runner  
+VI. Results are visible in the Actions tab; artifacts are downloadable  
 
 Nothing in this chain requires a local machine beyond a browser. A student without a capable local machine — or a machine configured for a specific technology stack — can participate fully in the development process.
 

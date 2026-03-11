@@ -44,12 +44,12 @@ Understanding this phase helps students understand the structure they are workin
 
 In a GitHub Classroom model:
 
-I. The lecturer creates an assignment inside the Classroom interface
-II. The assignment is linked to a GitHub organisation account
-III. An optional template repository may be attached — providing starter files, folder structure, or instructions
-IV. An invitation link is generated
-V. Students accept the link individually
-VI. GitHub automatically creates a **private repository** for each student inside the organisation
+I. The lecturer creates an assignment inside the Classroom interface  
+II. The assignment is linked to a GitHub organisation account  
+III. An optional template repository may be attached — providing starter files, folder structure, or instructions  
+IV. An invitation link is generated  
+V. Students accept the link individually  
+VI. GitHub automatically creates a **private repository** for each student inside the organisation  
 
 Structural points worth understanding:
 
@@ -72,10 +72,10 @@ Identical structures exist in professional environments. Enterprise GitHub organ
 
 The student's responsibilities at this stage are minimal but critical:
 
-I. Accept the assignment invitation link — do this as soon as it is provided. Delay occasionally causes issues with repository creation timing.
-II. Wait for confirmation that your repository has been created. GitHub displays a confirmation message and a link to your repository.
-III. Copy the repository URL — use the HTTPS URL ending in `.git`, found under Code → HTTPS.
-IV. **Clone the repository** — never initialise.
+I. Accept the assignment invitation link — do this as soon as it is provided. Delay occasionally causes issues with repository creation timing.  
+II. Wait for confirmation that your repository has been created. GitHub displays a confirmation message and a link to your repository.  
+III. Copy the repository URL — use the HTTPS URL ending in `.git`, found under Code → HTTPS.  
+IV. **Clone the repository** — never initialise.  
 
 ```bash
 git clone <assignment-url>
@@ -121,9 +121,9 @@ Professional teams commit small, logical units of work frequently — not to pro
 
 At any point during the assignment period, you should be able to verify:
 
-I. **Your commits are visible on GitHub** — open the repository in a browser and confirm that recent commits appear under the commit history
-II. **You are on the correct branch** — unless instructed otherwise, you should be working on `main`
-III. **No unexpected conflicts exist** — `git status` should return clean or show only intended unstaged changes
+I. **Your commits are visible on GitHub** — open the repository in a browser and confirm that recent commits appear under the commit history  
+II. **You are on the correct branch** — unless instructed otherwise, you should be working on `main`  
+III. **No unexpected conflicts exist** — `git status` should return clean or show only intended unstaged changes  
 
 Use these commands to confirm:
 

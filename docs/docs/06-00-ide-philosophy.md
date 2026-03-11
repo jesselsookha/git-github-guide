@@ -29,8 +29,8 @@ Git is a command-line tool. Every IDE that claims to "support Git" is executing 
 
 When you click a button in an IDE, one of two things happens:
 
-I. The IDE runs a single Git command
-II. The IDE runs a sequence of Git commands
+I. The IDE runs a single Git command  
+II. The IDE runs a sequence of Git commands  
 
 There is no alternate version of Git inside the IDE. There is no separate system, no parallel implementation, no IDE-specific repository format. The `.git` directory on your filesystem is the same `.git` directory regardless of whether you interact with it through a terminal, VS Code, Android Studio, NetBeans, or GitHub Desktop.
 

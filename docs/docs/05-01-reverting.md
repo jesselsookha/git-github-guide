@@ -116,10 +116,10 @@ git revert 3037ae6
 
 What happens:
 
-I. Git calculates the inverse of the changes introduced by that commit
-II. Git creates a new commit whose content is that inverse — staged automatically
-III. A text editor opens for the commit message (pre-filled with "Revert '<original-message>'")
-IV. Save and close the editor to complete the revert commit
+I. Git calculates the inverse of the changes introduced by that commit  
+II. Git creates a new commit whose content is that inverse — staged automatically  
+III. A text editor opens for the commit message (pre-filled with "Revert '<original-message>'")  
+IV. Save and close the editor to complete the revert commit  
 
 Your working directory now reflects the project state as if that commit had never been made — but the history shows both the original commit and the revert commit. The record is complete and honest.
 
@@ -281,15 +281,17 @@ None of this affects the history or the current state of `main`. It is navigatio
 
 Understanding which Git operations are safe in shared repositories and which are not is a mark of professional maturity. The distinction is simple in principle:
 
-**Safe operations add to history without altering it:**
-- `git revert` — adds a new commit that undoes previous changes
-- `git checkout <hash>` — navigates to a previous state without modifying anything
-- `git log`, `git diff`, `git show` — read-only inspection
+**Safe operations add to history without altering it:**  
 
-**Unsafe operations in shared repositories rewrite existing history:**
-- `git reset --hard` or `git reset --soft` — discards commits from the branch's visible history
-- `git rebase` on pushed commits — rewrites commit hashes, invalidating what others have pulled
-- `git push --force` — the delivery mechanism for rewritten history; forces the remote to accept a history that differs from what contributors already have
+- `git revert` — adds a new commit that undoes previous changes  
+- `git checkout <hash>` — navigates to a previous state without modifying anything  
+- `git log`, `git diff`, `git show` — read-only inspection  
+
+**Unsafe operations in shared repositories rewrite existing history:**  
+
+- `git reset --hard` or `git reset --soft` — discards commits from the branch's visible history  
+- `git rebase` on pushed commits — rewrites commit hashes, invalidating what others have pulled  
+- `git push --force` — the delivery mechanism for rewritten history; forces the remote to accept a history that differs from what contributors already have  
 
 The test for whether an operation is safe: *have other people already received the commits I am about to modify?* If yes, those commits belong to the shared history. Modifying them requires force-pushing, which tells every contributor that the history they have is wrong — and forces them to resolve the divergence.
 

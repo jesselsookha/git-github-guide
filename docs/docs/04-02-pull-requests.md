@@ -41,23 +41,23 @@ Think of a PR as saying:
 
 After completing and pushing your branch:
 
-I. Navigate to the repository on GitHub
-II. GitHub will typically display a banner: *"Your recently pushed branch — Compare & pull request."* Click it. If it does not appear, switch to your branch manually and click **Compare & pull request**.
-III. Review the base branch (`main`) and compare branch (your feature branch) — confirm these are correct
-IV. Write a **clear, specific title** that summarises the change:
+I. Navigate to the repository on GitHub  
+II. GitHub will typically display a banner: *"Your recently pushed branch — Compare & pull request."* Click it. If it does not appear, switch to your branch manually and click **Compare & pull request**.  
+III. Review the base branch (`main`) and compare branch (your feature branch) — confirm these are correct  
+IV. Write a **clear, specific title** that summarises the change:  
 
    - Good: *"Add about.html with team member profiles"*
    - Poor: *"my changes"*
 
-V. Write a **description** that provides context:
+V. Write a **description** that provides context:  
 
    - What was built or fixed
    - Any decisions that were made and why
    - Anything the reviewer should look at specifically
    - Whether any known issues or limitations remain
 
-VI. Assign reviewers if the team has established who reviews what
-VII. Click **Create pull request**
+VI. Assign reviewers if the team has established who reviews what  
+VII. Click **Create pull request**  
 
 At this point, the PR is open. The branch is visible to every collaborator with repository access. It is not yet part of `main`. It waits for review.
 
@@ -222,11 +222,11 @@ Building directly on the branching activity in 04-01, this activity focuses on t
 
 ### Steps
 
-I. Each collaborator pushes their feature branch (from 04-01 activity)
-II. Each collaborator opens a PR with a clear title and description
-III. Each collaborator reviews at least one teammate's PR — leaves at least one substantive comment
-IV. Repository owner performs final review and merges approved PRs
-V. All collaborators pull the updated `main`:
+I. Each collaborator pushes their feature branch (from 04-01 activity)  
+II. Each collaborator opens a PR with a clear title and description  
+III. Each collaborator reviews at least one teammate's PR — leaves at least one substantive comment  
+IV. Repository owner performs final review and merges approved PRs  
+V. All collaborators pull the updated `main`:  
 
 ```bash
 git pull origin main
@@ -236,16 +236,16 @@ git pull origin main
 
 If two students edit the same file on different branches and one is merged first, the second PR will show a conflict. The activity:
 
-I. GitHub marks the PR as "conflicted — cannot be merged automatically"
-II. The contributor pulls `main` into their branch:
+I. GitHub marks the PR as "conflicted — cannot be merged automatically"  
+II. The contributor pulls `main` into their branch:  
 
 ```bash
 git pull origin main
 ```
 
-III. Git marks the conflicted sections in the affected file
-IV. The contributor and reviewer discuss which version to keep
-V. The contributor edits the file, removes conflict markers, saves, stages, and commits:
+III. Git marks the conflicted sections in the affected file  
+IV. The contributor and reviewer discuss which version to keep  
+V. The contributor edits the file, removes conflict markers, saves, stages, and commits:  
 
 ```bash
 git add conflicted-file.html
@@ -253,7 +253,7 @@ git commit -m "Resolve merge conflict in contact page"
 git push origin feature-contactPage
 ```
 
-VI. The PR updates automatically — it can now be merged
+VI. The PR updates automatically — it can now be merged  
 
 This extension is worth running at least once in a controlled environment. The first time a student encounters a merge conflict under deadline pressure is not the right time to learn how to resolve it.
 

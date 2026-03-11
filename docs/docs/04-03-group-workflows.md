@@ -156,12 +156,12 @@ When a conflict occurs during a merge or a pull, the team responds together — 
 
 The process:
 
-I. Identify the conflicted file(s) — Git will mark them in `git status`
-II. Open the conflicted file — locate the conflict markers
-III. **Discuss with the teammate whose work is in conflict** — do not resolve unilaterally
-IV. Edit the file to reflect the correct combined content
-V. Remove all conflict markers
-VI. Stage, commit, and push:
+I. Identify the conflicted file(s) — Git will mark them in `git status`  
+II. Open the conflicted file — locate the conflict markers  
+III. **Discuss with the teammate whose work is in conflict** — do not resolve unilaterally  
+IV. Edit the file to reflect the correct combined content  
+V. Remove all conflict markers  
+VI. Stage, commit, and push:  
 
 ```bash
 git add conflicted-file.html
